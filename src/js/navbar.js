@@ -1,8 +1,16 @@
-let nav = document.getElementById("nav")
+const nav = document.getElementById("nav");
 
-nav.innerHTML = `        <nav class="navbar">
-            <a href="index.html">Beranda</a>
-            <a href="/src/page/Project.html">Proyek</a>
-            <a href="/src/page/Sertivikat.html">Sertivicate</a>
-            <a href="/src/page/Kontak.html">Kontak</a>
-        </nav>`;
+if (nav) {
+  const isRoot = !window.location.pathname.includes('/src/page/') && !window.location.pathname.includes('/page/');
+  const rootPath = isRoot ? '' : '../../';
+  const pagePath = isRoot ? 'src/page/' : '';
+
+  nav.innerHTML = `
+    <nav class="navbar">
+      <a href="${rootPath}index.html">Beranda</a>
+      <a href="${pagePath}Project.html">Proyek</a>
+      <a href="${pagePath}Sertivikat.html">Sertivicate</a>
+      <a href="${pagePath}Kontak.html">Kontak</a>
+    </nav>
+  `;
+}
