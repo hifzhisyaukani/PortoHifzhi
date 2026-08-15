@@ -1,0 +1,127 @@
+.portfolio {
+  background: linear-gradient(to top left, #254f9b 20%, #08265c);
+  padding: 50px;
+  color: #fff;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+
+.portfolio h2 {
+  font-family: "Caveat", cursive;
+  font-size: 55px;
+  margin: 10px 0;
+  color: #ffcc00;
+}
+
+.portfolio p {
+  font-size: 14px;
+  color: #dce3f0;
+  margin-bottom: 20px;
+}
+
+.project-count {
+  background-color: #254f9b;
+  display: inline-block;
+  padding: 8px 15px;
+  border-radius: 8px;
+  color: #ffcc00;
+  width: fit-content;
+}
+
+.certificates {
+  /* background: linear-gradient(to top left, #254f9b 20%, #08265c); */
+  padding: 50px;
+  color: #fff;
+  text-align: center;
+}
+
+.certificates h2 {
+  font-family: "Caveat", cursive;
+  font-size: 45px;
+  color: #ffcc00;
+  margin-bottom: 30px;
+}
+
+.cert-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.cert-card {
+  background: #1a1a2e;
+  color: #fff;
+  border-radius: 10px;
+  width: 300px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  transition: 0.3s ease-in-out;
+  text-align: left;
+  overflow: hidden;
+}
+
+.cert-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.cert-image {
+  height: 120px;
+  overflow: hidden;
+}
+
+.cert-image img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.cert-card h3 {
+  color: #ffcc00;
+  margin: 15px;
+}
+
+.cert-card p {
+  margin: 0 15px 15px;
+  font-size: 14px;
+  color: #dce3f0;
+}
+
+.cert-footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 15px 15px;
+  font-size: 14px;
+}
+
+.cert-date {
+  color: #4da3ff;
+}
+
+.cert-org {
+  color: #ff66cc;
+  font-weight: 600;
+}
+
+.cert-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.cert-image img {
+  transition: transform 0.3s ease;
+}
+
+.cert-card:hover .cert-image img {
+  transform: scale(1.05);
+}
+
+
+@media (max-width: 768px) {
+  .cert-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+  .cert-card {
+    width: 90%;
+  }
+}

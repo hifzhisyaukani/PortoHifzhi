@@ -1,0 +1,130 @@
+.contact {
+  margin: 50px;
+  border-radius: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  padding: 50px;
+  background: linear-gradient(to top left, #2361d5, #061d49);
+  color: #fff;
+  margin-bottom: 60px;
+}
+
+.contact-form,
+.contact-info {
+  flex: 1;
+  min-width: 300px;
+}
+
+.contact-info {
+  margin-left: 110px !important;
+  padding: 30px;
+  border-radius: 10px;
+  background-color: #1c4186;
+}
+
+.contact-form h2,
+.contact-info h2 {
+  color: #ffcc00;
+  margin-bottom: 10px;
+}
+
+.contact-form p {
+  color: #dce3f0;
+  margin-bottom: 20px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border: none;
+  border-radius: 6px;
+  background: #1a1a2e;
+  color: #fff;
+}
+
+.contact-form textarea {
+  height: 50px;
+}
+
+.contact-form button {
+  background: #ffcc00;
+  color: #08265c;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+
+.contact-form button:hover {
+  background: #ffd633;
+}
+
+.contact-info p {
+  margin: 8px 0;
+  font-size: 14px;
+}
+
+.social-links {
+  margin-top: 15px;
+  display: flex;
+  gap: 15px;
+}
+
+.social-links a {
+  background: #0a1e42;
+  color: #fff;
+  padding: 8px 12px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-size: 14px;
+  transition: 0.3s ease-in-out;
+}
+
+.social-links a:hover {
+  background: #09204a;
+  transform: scale(1.05);
+}
+
+.extra-links {
+  margin-top: 40px;
+  gap: 20px;
+}
+
+.btn-whatsapp {
+  border: 2px solid #25d366;
+  margin-right: 20px;
+  padding: 10px;
+  border-radius: 10px;
+  text-decoration: none;
+  color: white;
+  font-weight: 600;
+  font-size: large;
+  transition: 0.3s ease-in-out;
+}
+
+.btn-whatsapp:hover {
+  background-color: #25d366;
+  transform: scale(1.1) !important;
+}
+
+.btn-email {
+  border: 2px solid #fff;
+  padding: 10px 13px;
+  border-radius: 6px;
+  text-decoration: none;
+  color: white;
+  font-weight: 600;
+  transition: 0.3s ease-in-out;
+}
+
+.btn-email:hover {
+  background-color: #1a73e8;
+  border-color: #1a73e8;
+  transform: translateX(15px);
+}
+

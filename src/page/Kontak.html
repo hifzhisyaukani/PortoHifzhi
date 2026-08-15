@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="/src/style/global.css">
+    <link rel="stylesheet" href="/src/style/kontak.css">
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800;900&family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,700;0,9..144,900;1,9..144,400&display=swap"
+        rel="stylesheet" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap" rel="stylesheet">
+
+    <!-- <link rel="stylesheet" href="https://jsdelivr.net"> -->
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+
+</head>
+
+<body>
+    <header id="nav">
+
+    </header>
+
+    <main>
+        <section class="contact">
+            <div class="contact-form">
+                <h2>Kirim Pesan</h2>
+                <p>Ingin kolaborasi atau freelance? Mari kita diskusikan bersama.</p>
+                <form action="https://formspree.io/f/mgojgjlw" method="POST">
+                    <input type="text" name="name" placeholder="Masukkan nama Anda" required>
+                    <input type="email" name="email" placeholder="nama@email.com" required>
+                    <textarea name="message" placeholder="Ceritakan tentang proyek atau ide Anda..."
+                        required></textarea>
+                    <button type="submit">Kirim Pesan</button>
+                </form>
+
+                <div class="extra-links">
+                    <a href="#" onclick="sendWhatsApp()" class="btn-whatsapp">
+                        <i class="bi bi-whatsapp"></i>
+                    </a>
+                    <a href="mailto:hifzhisyaukani@gmail.com" class="btn-email">
+                        <i class="bi bi-envelope"></i>
+                    </a>
+                </div>
+
+            </div>
+
+            <div class="contact-info">
+                <h2>Informasi Kontak</h2>
+                <strong>Email:</strong>
+                <!-- <p> -->
+                <ul>
+                    <li>mochammadhifzhisyaukani@smkwikrama.sch.id</li>
+                    <li>hifzhisyaukani@gmail.com</li>
+                </ul>
+                <!-- </p> -->
+                <p><strong>Phone:</strong> +62 895-1735-4572</p>
+                <p><strong>Location:</strong> Bogor, Indonesia</p>
+
+                <h3>Temukan Saya di</h3>
+                <div class="social-links">
+                    <a href="https://github.com/mochammadhifzhisyaukani" target="_blank"><i class="bi bi-github"></i></a>
+                    <a href="https://www.linkedin.com/in/mochammad-hifzhiii-syaukani-872305386" target="_blank"><i class="bi bi-linkedin"></i></a>
+                    <a href="https://www.instagram.com/hfzi_25?igsh=dnJ2Z2tsb2R6cjhy" target="_blank"><i class="bi bi-instagram"></i></a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer id="footer"></footer>
+</body>
+<script src="/src/js/navbar.js"></script>
+<script src="/src/js/footer.js"></script>
+<script src="/src/js/kontak.js"></script>
+
+</html>
